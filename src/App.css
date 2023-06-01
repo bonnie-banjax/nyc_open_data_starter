@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.GlobalRelativeContainer {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dark_bg {
+  background-color: #1a1a1a;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+}
+
+.ToolBoxContainer {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 12;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: whitesmoke;
+  width: 50rem;
+  max-width: 70%;
+  box-shadow: white 0px 0px 10px 0px;
+}
+
+.ControlPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+ }
