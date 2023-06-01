@@ -73,6 +73,7 @@ export default function WebMap() {
 
                 return false;
               })
+              
               .map((row) => ({
                 type: "Feature",
                 geometry: {

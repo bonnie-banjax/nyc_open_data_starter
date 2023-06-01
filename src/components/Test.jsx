@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Test() {
-  const [count, setCount] = React.useState(1);
+  const [count, setCount] = React.useState(0);
   const [title, setTitle] = React.useState("");
 
   React.useEffect(() => {
@@ -10,10 +10,12 @@ export default function Test() {
       .then((response) => response.json())
       .then((json) => setTitle(json.title));
   }, [count]);
+  
   return (
     <div>
       <h1>{count}</h1>
-      <button onClick={() => setCount(count + 1)}>Click Me</button>
+      <h1>Hello World</h1>
+      <button onClick={() => setCount(count + 1)}>[-----]</button>
       <h4
         style={{
           marginTop: "1rem",
